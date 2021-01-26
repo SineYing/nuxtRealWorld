@@ -6,7 +6,9 @@
   "author": "Sine <sine_web@163.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
   },
   "dependencies": {
     "axios": "^0.21.1",
