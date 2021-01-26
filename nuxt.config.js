@@ -2,6 +2,10 @@
  * Nuxt.js配置文件
  */
 module.exports = {
+    server: {
+        port: 3389, // default: 3000
+        host: 0.0.0.0
+    },
     router: {
         linkExactActiveClass: 'active',
         extendRoutes(routes, resolve) {
