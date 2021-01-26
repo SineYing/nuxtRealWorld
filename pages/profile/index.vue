@@ -162,7 +162,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.profile.username} - nuxtRealWorl`,
+      title: `${this.profile.username} - nuxtRealWorld`,
     };
   },
 };

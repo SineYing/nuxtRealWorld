@@ -233,7 +233,7 @@ export default {
   },
   head() {
     return {
-      title: `nuxtRealWorl`,
+      title: `nuxtRealWorld`,
     };
   },
 };

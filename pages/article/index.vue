@@ -56,7 +56,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.article.title} - nuxtRealWorl`,
+      title: `${this.article.title} - nuxtRealWorld`,
       meta: [
         {
           hid: "description",

@@ -116,7 +116,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.user.username} - nuxtRealWorl`,
+      title: `${this.user.username} - nuxtRealWorld`,
     };
   },
 };

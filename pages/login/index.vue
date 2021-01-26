@@ -110,7 +110,7 @@ export default {
     },
     head() {
       return {
-        title: `login - nuxtRealWorl`,
+        title: `login - nuxtRealWorld`,
       };
     },
   },
