@@ -231,6 +231,11 @@ export default {
       this.favoritingAticle = "";
     },
   },
+  head() {
+    return {
+      title: `nuxtRealWorl`,
+    };
+  },
 };
 </script>
 

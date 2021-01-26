@@ -95,7 +95,6 @@ export default {
   },
   methods: {
     async onAdd() {
-      console.log(this.params, "params");
       if (this.params && JSON.stringify(this.params) !== "{}") {
         await putArticles({ article: this.article, slug: this.params.slug });
         this.$router.push(`/article/${this.params.slug}`);
@@ -116,6 +115,11 @@ export default {
       const { tagList } = this.article;
       this.article.tagList = tagList.filter((i) => i !== item);
     },
+  },
+  head() {
+    return {
+      title: `article-nuxtRealWorld`,
+    };
   },
 };
 </script>

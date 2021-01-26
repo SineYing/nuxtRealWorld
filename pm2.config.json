@@ -2,7 +2,7 @@
     "apps": [
         {
             "name": "nuxtRealWorld",
-            "script": "npm",
+            "script": "yarn",
             "args": "start"
         }
     ]

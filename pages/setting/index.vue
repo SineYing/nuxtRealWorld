@@ -114,6 +114,11 @@ export default {
       this.username = username;
     },
   },
+  head() {
+    return {
+      title: `${this.user.username} - nuxtRealWorl`,
+    };
+  },
 };
 </script>
 

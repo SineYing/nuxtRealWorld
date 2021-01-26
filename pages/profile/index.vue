@@ -141,7 +141,7 @@ export default {
     return {
       articles,
       limit,
-      tab:query.tab,
+      tab: query.tab,
       profile,
     };
   },
@@ -159,6 +159,11 @@ export default {
       }
       this.favoritingAticle = "";
     },
+  },
+  head() {
+    return {
+      title: `${this.profile.username} - nuxtRealWorl`,
+    };
   },
 };
 </script>

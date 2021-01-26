@@ -69,7 +69,7 @@ import { login, register } from "@/api/user";
 //只在客户端加载这个包
 const Cookie = process.client ? require("js-cookie") : undefined;
 export default {
-  middleware: 'notAuthenticated',
+  middleware: "notAuthenticated",
   name: "Login",
   computed: {
     isLogin() {
@@ -98,15 +98,20 @@ export default {
             });
         // TODO：保存用户的登录状态
         // 存储到容器方便共享
-        this.$store.commit('setUser',data.user)
+        this.$store.commit("setUser", data.user);
         // 操作cookie,数据既要在客户端用，也要在服务端用
-        Cookie.set('user',data.user)
+        Cookie.set("user", data.user);
         //跳转到首页
         this.$router.push("/");
       } catch (err) {
         console.log(err);
         this.errors = err.response.data.errors;
       }
+    },
+    head() {
+      return {
+        title: `login - nuxtRealWorl`,
+      };
     },
   },
 };
